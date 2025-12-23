@@ -1,0 +1,62 @@
+* {
+  background-color: antiquewhite;
+}
+h1 {
+  text-align: center;
+}
+.complete-block {
+  border: 1px solid black;
+  background-color: white;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 5%;
+}
+.first-block {
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.second-block {
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.ptag {
+  background-color: white;
+}
+.email-input {
+  background-color: white;
+}
+.password {
+  background-color: white;
+}
+.new-account{
+    background-color: white;
+}
+.p1tag{
+    background-color: white;
+    padding-left: 10px;
+}
+.outter-button{
+    background-color: white;
+    text-align: center;
+    margin-top:20px;
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:20px;
+}
+.btn{
+    background-color: green;
+    padding-left:80px;
+    padding-right:80px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    border-radius: 999px;
+}
