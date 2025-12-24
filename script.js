@@ -1,20 +1,19 @@
-const express = require('express');
-const cors = require('cors');
+import express  from "express";
+import bodyparser from "body-parser";
+import {dirname} from "path";
+import { fileURLToPath } from "url";
+const _dirname=dirname (fileURLToPath(import.meta.url));
 
 const app = express();
+app.use(bodyparser.urlencoded({extended:true}));
+app.use(express.json()); 
 
-app.use(cors({
-  origin: 'http://127.0.0.1:5500'
-}));
-
-app.use(express.json());
-
-app.post('/new', (req, res) => {
-  const { email, password } = req.body;
-  console.log(email, password);
-  res.json({ message: 'Login data received' });
-});
-
+app.get("/",(req,res)=>{
+  res.sendFile(_dirname + "/index.html");
+})
+app.post("/submit",(req,res)=>{
+  console.log(req.body);
+})
 app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
