@@ -1,19 +1,16 @@
-import express  from "express";
-import bodyparser from "body-parser";
-import {dirname} from "path";
-import { fileURLToPath } from "url";
-const _dirname=dirname (fileURLToPath(import.meta.url));
-
+import express from "express";
 const app = express();
-app.use(bodyparser.urlencoded({extended:true}));
-app.use(express.json()); 
+import cors from "cors";
+app.use(express.json());
+app.use(cors());
+app.get("/", (req, res) => {
+  console.log("Default route");
+});
+app.post("/submit", (req, res) => {
+  console.log(req.body.email);
+  console.log(req.body.password);
+});
 
-app.get("/",(req,res)=>{
-  res.sendFile(_dirname + "/index.html");
-})
-app.post("/submit",(req,res)=>{
-  console.log(req.body);
-})
 app.listen(3000, () => {
-  console.log('Server running on port 3000');
+  console.log("your server is running successfull!");
 });
