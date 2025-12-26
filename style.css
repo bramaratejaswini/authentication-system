@@ -4,6 +4,9 @@
 h1 {
   text-align: center;
 }
+.nav-complete-block{
+  text-align: center;
+}
 .complete-block {
 width: 400px;
   border: 1px solid black;
