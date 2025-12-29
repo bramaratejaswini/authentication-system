@@ -1,5 +1,4 @@
 document.querySelector(".btn").addEventListener("click", function (e) {
-  e.preventDefault(); 
         const value1 = document.getElementById("email-input");
         const value2 = document.getElementById("password");
         const email=value1.value;
@@ -12,3 +11,4 @@ document.querySelector(".btn").addEventListener("click", function (e) {
           body:JSON.stringify({email,password})
         })
       });
+

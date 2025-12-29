@@ -74,3 +74,49 @@ width: 400px;
     width: 300px;
     height: 30px;
 }
+.A-header{
+  text-align: center;
+}
+.A-outter-box{
+  background-color: white;
+  border:0.5px solid black;
+  margin-left:400px;
+  margin-right:400px;
+  padding:10px;
+  border-radius: 7%;
+  align-items: center;
+}
+.A-email{
+  margin-top:20px;
+  background-color: white;
+  margin-bottom:10px;
+  margin-left:10px;
+}
+.A-email-input{
+  background-color: white;
+  height: 30px;
+  width: 300px;
+  margin-bottom:10px;
+  margin-left:20px;
+}
+.A-password{
+  background-color: white;
+  margin-bottom:10px;
+  margin-left:10px;
+}
+.A-password-input{
+  background-color: white;
+  height: 30px;
+  width: 300px;
+  margin-bottom:20px;
+  margin-left:20px;
+}
+.btn1{
+  background-color:green;
+  border-radius: 999px;
+  align-items: center;
+  margin-left:115px;
+  height:40px;
+  width: 150px;
+  margin-bottom:15px;
+}
